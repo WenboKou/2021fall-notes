@@ -64,7 +64,20 @@ The geometry view of this method is just move the black line along $$x^0$$.
 
 ## 4. Projection on a line.
 
-投影的定义，分析上的证明，求导式的证明，课本上的证明
+Consider a line$$
+{x_0 + tu:t\in R}
+$$
+
+The *projection* of a given point $$
+x
+$$ on the line is a vector $$
+z
+$$ located on the line, that is closest to $$
+x
+$$ (in Euclidean norm). This corresponds to a simple optimization problem:
+$$
+\min\limits_{t} ||x- x_0 - tu||_2
+$$.
 
 ## 5. Orthogonalization: the Gram-Schmidt procedure
 
