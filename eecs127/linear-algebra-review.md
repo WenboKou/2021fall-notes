@@ -97,15 +97,17 @@ A hyperplane in $$\text{R}^n$$ is a set of the form
 $$
 \text{H} = \{x:a^Tx=b\}
 $$ 
-and $$ b\in \text{R} $$ are given. 
+and $$ b\in \text{R} $$ are given.
+![hyperplane](images/ee127fig5.jpg)
+ 
 A half-space is a subset of the form
 
 $$
 \text{H} = \{x:a^Tx \geq b\}
 $$
 
-where $$ a \in \text{R}^n, a \neq 0, b \in \text{R}
-$$
+where $$ a \in \text{R}^n, a \neq 0, b \in \text{R} $$.
+To make $$a^Tx\geq b$$, $$x$$ must be on or above the plane, so that its module is big enough to satisfy the inequality.
 
 ## 7. Linear Functions
 
