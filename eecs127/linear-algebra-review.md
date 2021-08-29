@@ -93,7 +93,19 @@ The procedure is Gram-Schmidt and its theory is based on SECTION 4.
 
 ## 6. Hyperplanes
 
-讲一下a的意义，b的意义，x是一些什么样的点。从原点到plane的距离是多少，半平面的定义和定义的几何直观。
+A hyperplane in $$\text{R}^n$$ is a set of the form
+$$
+\text{H} = \{x:a^Tx=b\}
+$$ 
+and $$ b\in \text{R} $$ are given. 
+A half-space is a subset of the form
+
+$$
+\text{H} = \{x:a^Tx \geq b\}
+$$
+
+where $$ a \in \text{R}^n, a \neq 0, b \in \text{R}
+$$
 
 ## 7. Linear Functions
 
