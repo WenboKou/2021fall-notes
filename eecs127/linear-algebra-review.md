@@ -68,12 +68,8 @@ Consider a line$$
 {x_0 + tu:t\in R}$$
 
 The *projection* of a given point $$
-x
-$$ on the line is a vector $$
-z
-$$ located on the line, that is closest to $$
-x
-$$ (in Euclidean norm). This corresponds to a simple optimization problem:
+x $$ on the line is a vector $$ z $$ located on the line, that is closest to $$
+x $$ (in Euclidean norm). This corresponds to a simple optimization problem:
 
 $$
 \min\limits_{t} ||x- x_0 - tu||_2
