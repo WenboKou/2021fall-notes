@@ -1,1 +1,2 @@
-# 2021fall-notes
+# Course Catalog
+

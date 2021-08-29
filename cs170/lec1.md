@@ -1,2 +1,6 @@
-### 1.Divide and Conquer
-### 2.Karatsuba's Algorithm
+# lec1
+
+## 1.Divide and Conquer
+
+## 2.Karatsuba's Algorithm
+
