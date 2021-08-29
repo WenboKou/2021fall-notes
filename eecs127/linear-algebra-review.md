@@ -98,8 +98,9 @@ $$
 \text{H} = \{x:a^Tx=b\}
 $$ 
 and $$ b\in \text{R} $$ are given.
+
 ![hyperplane](images/ee127fig5.jpg)
- 
+
 A half-space is a subset of the form
 
 $$
