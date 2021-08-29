@@ -34,15 +34,6 @@ x^0 = \begin{pmatrix}
     -9
 \end{pmatrix}.
 $$
-
-$$
-\begin{pmatrix}
-1 & 1 & \cdots & 1 \\
-1 & 1 & \cdots & 1 \\
-\vdots & \vdots & \ddots & \vdots \\
-1 & 1 & \cdots & 1 \\
-\end{pmatrix}$$
-
 The affine subspace $$L$$ is thus the line $$x^0 + span(u),$$ where $$x^0,u$$ are defined above.
 
 How to prove the correctness of this solution?
