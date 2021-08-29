@@ -37,19 +37,13 @@ $$
 The affine subspace $$L$$ is thus the line $$x^0 + span(u),$$ where    $$x^0,u$$ are defined above.
 
 How to prove the correctness of this solution?
-There's something interesting I want to mention. For example, $$x_1 - 13x_2 + 4x_3 = 2$$ can be written as $$
-\omega \cdot 
+There's something interesting I want to mention. For example, $$x_1 - 13x_2 + 4x_3 = 2$$ can be written as $$ \omega \cdot 
 \begin{pmatrix}
     x_1\\
     x_2\\
     x_3
-\end{pmatrix} 
-= 2.
-$$
-
-where
- 
-$$\omega = \begin{pmatrix}
+\end{pmatrix} = 2. $$ 
+where $$\omega = \begin{pmatrix}
     1\\
     -13\\
     4
