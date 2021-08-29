@@ -77,6 +77,7 @@ $$ (in Euclidean norm). This corresponds to a simple optimization problem:
 $$
 \min\limits_{t} ||x- x_0 - tu||_2
 $$. 
+
 There are three ways to find $$
 z
 $$.
