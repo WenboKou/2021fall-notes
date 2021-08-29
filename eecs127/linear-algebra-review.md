@@ -76,7 +76,24 @@ x
 $$ (in Euclidean norm). This corresponds to a simple optimization problem:
 $$
 \min\limits_{t} ||x- x_0 - tu||_2
+$$. 
+There are three ways to find $$
+z
 $$.
+
+### [First Way From Textbook](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_vecs_proj.html)
+
+### Take derivative of the optimization problem.
+
+$$
+\frac{\partial \mathcal L}{\partial t} = 2t - 2u^T(x-x_0)=0
+$$.
+We get the same result as the first method.
+
+### Analytical view 
+![fig3](images/ee127fig3.jpg)
+
+
 
 ## 5. Orthogonalization: the Gram-Schmidt procedure
 
