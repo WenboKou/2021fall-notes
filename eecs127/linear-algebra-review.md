@@ -65,8 +65,7 @@ The geometry view of this method is just move the black line along $$x^0$$.
 ## 4. Projection on a line.
 
 Consider a line$$
-{x_0 + tu:t\in R}
-$$
+{x_0 + tu:t\in R}$$
 
 The *projection* of a given point $$
 x
