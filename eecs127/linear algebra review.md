@@ -52,10 +52,14 @@ where $$\omega = \begin{pmatrix}
 Write this equation in another form $$
 ||\omega||\cdot||x||\cos\theta = 2
 $$
+
 ![fig1](images/ee127fig1.jpg)
+
 So this equation represents a plane. We have two equations and their intersection is a line(the exception is when the two planes are the same). 
 To find how to represent this line using vectors. Find the passing origin parallel line which is equal to set the constant term to zero and then find vectors span this line and translate it by adding $$x^0$$.
+
 ![fig2](images/ee127fig2.jpg)
+
 The geometry view of this method is just move the black line along $$x^0$$.
 
 ### 3. C-S Inequality
