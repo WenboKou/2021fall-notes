@@ -6,7 +6,7 @@ $$
 S = span(x_1,\cdots,x_m):=\{\sum_{i=1}^m \lambda_ix_i:\lambda\in R^m\}.
 $$
 
-**Proof:** Get a nonzero vector from $$S$$ and get another nonzero vector, repeat the process until all other vectors can be represented by the vectors we already have. Assume these vectors are $$x_i,i=1,\dots,m$$, their span is $$V$$. For any vector in $$S$$, since the vector can be represented by $$x_i$$, this vector must be in $$V$$, so $$S \subset V$$. According to the definition  of space. Any linear combination of the vectors in $S$ still in it which means $$V \subset S$$. Thus $$S = V$$.
+**Proof:** Get a nonzero vector from $$S$$ and get another nonzero vector, repeat the process until all other vectors can be represented by the vectors we already have. Assume these vectors are $$x_i,i=1,\dots,m$$, their span is $$V$$. For any vector in $$S$$, since the vector can be represented by $$x_i$$, this vector must be in $$V$$, so $$S \subset V$$. According to the definition  of space. Any linear combination of the vectors in $$S$$ still in it which means $$V \subset S$$. Thus $$S = V$$.
 
 
 ### 2. Dimension of an affine subspace.
@@ -34,6 +34,15 @@ x^0 = \begin{pmatrix}
     -9
 \end{pmatrix}.
 $$
+
+$$
+\begin{pmatrix}
+1 & 1 & \cdots & 1 \\
+1 & 1 & \cdots & 1 \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & 1 & \cdots & 1 \\
+\end{pmatrix}$$
+
 The affine subspace $$L$$ is thus the line $$x^0 + span(u),$$ where $$x^0,u$$ are defined above.
 
 How to prove the correctness of this solution?
