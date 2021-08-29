@@ -85,7 +85,11 @@ We get the same result as the first method.
 
 ## 5. Orthogonalization: the Gram-Schmidt procedure
 
-简化一下textbook即可，这节的理论依据在4已经讲过了。
+A basis $$ (u_i)_{i =1}^n $$ is said to be *orthogonal* if $u_i^Tu_j=0$ if $i \neq j$. If in addition, $$||u_i||_2 = 1$$, we say that the basis is *orthonormal*.
+Orthogonalization means given a set of independent vectors that span the space, compute the orthonormal basis.
+The procedure is Gram-Schmidt and its theory is based on SECTION 4.
+
+![Gram-Schmidt](images/ee127fig4.jepg)
 
 ## 6. Hyperplanes
 
