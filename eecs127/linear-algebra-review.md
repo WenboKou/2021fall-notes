@@ -115,8 +115,7 @@ To make $$a^Tx\geq b$$, $$x$$ must be on or above the plane, so that its module 
 定义和近似一阶非线性函数
 A function $$f:\text{R}^n \rightarrow \text{R}$$ is linear if and only if $$f$$ preserves scaling and addition of its arguments:
 * for every $$x\in \text{R}^n$$, and $$\alpha \in \text{R}$$, $$f(\alpha x)=\alpha f(x)$$; and 
-* for every $$
-x_1, x_2 \in \text{R}^n, f(x_1 + x_2) = f(x_1) + f(x_2).$$
+* for every $$x_1, x_2 \in \text{R}^n, f(x_1 + x_2) = f(x_1) + f(x_2).$$
 A function $$ f $$ is *affine* if and only if $$f(x)-f(0)$$ is linear.
 
 #### Theorem: First-order expansion of a function.
