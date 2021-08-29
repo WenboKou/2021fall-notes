@@ -75,7 +75,7 @@ $$
 $$. 
 There are three ways to find $$ z $$.
 
-### [First Way From Textbook](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_vecs_proj.html)
+### [First Method From Textbook](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_vecs_proj.html)
 
 ### Take derivative of the optimization problem.
 
