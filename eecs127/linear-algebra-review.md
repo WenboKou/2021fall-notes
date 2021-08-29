@@ -62,24 +62,20 @@ The geometry view of this method is just move the black line along $$x^0$$.
 
 **proof2:** **put my own proof here.**
 
-## 4. Projection on a line.
+## 4. Projection on a line
 
-Consider a line$$
-{x_0 + tu:t\in R}$$
-The *projection* of a given point $$
-x $$ on the line is a vector $$ z $$ located on the line, that is closest to $$
-x $$ (in Euclidean norm). This corresponds to a simple optimization problem:
+Consider a line$${x_0 + tu:t\in R}$$
+The *projection* of a given point $$x$$ on the line is a vector $$z$$ located on the line, that is closest to $$ x $$ (in Euclidean norm). This corresponds to a simple optimization problem:
 $$
 \min\limits_{t} ||x- x_0 - tu||_2
 $$.
-There are three ways to find $$ z $$.
+There are three ways to find $$z$$.
 
 ### [First Way From Textbook](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_vecs_proj.html)
 
 ### Take derivative of the optimization problem
 
-$$
-\frac{\partial \mathcal L}{\partial t} = 2t - 2u^T(x-x_0)=0 $$.
+$$\frac{\partial \mathcal L}{\partial t} = 2t - 2u^T(x-x_0)=0 $$.
 We get the same result as the first method.
 
 ### Analytical view 
