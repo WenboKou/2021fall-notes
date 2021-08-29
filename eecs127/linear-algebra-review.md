@@ -118,7 +118,7 @@ A function $$f:\text{R}^n \rightarrow \text{R}$$ is linear if and only if $$f$$ 
 * for every $$x_1, x_2 \in \text{R}^n, f(x_1 + x_2) = f(x_1) + f(x_2).$$
 A function $$ f $$ is *affine* if and only if $$f(x)-f(0)$$ is linear.
 
-#### Theorem: First-order expansion of a function.
+### Theorem: First-order expansion of a function.
 
 The *first-order approximation* of a differentiable function $$f$$ at a point $$x_0$$ is of the form
 $$
