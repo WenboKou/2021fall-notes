@@ -48,7 +48,9 @@ where $$\omega = \begin{pmatrix}
     -13\\
     4
 \end{pmatrix}$$.
-Write this equation in another form $$
+Write this equation in another form 
+
+$$
 ||\omega||\cdot||x||\cos\theta = 2
 $$
 
