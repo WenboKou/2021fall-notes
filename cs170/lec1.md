@@ -1,3 +1,7 @@
 ### 1.Divide and Conquer
-先写127吧
-### 2.Karatsuba's Algorithm
+
+![Divide and Conquer](images/cs170fig1.jpg)
+
+### 2.Karatsuba Algorithm
+
+![Karatsuba Algorithm](images/cs170fig2.jpg)
