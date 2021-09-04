@@ -17,6 +17,9 @@ $$T(n)=\begin{cases}
     0, n\leq 1\\
     T(n-1) + T(n-2) + 1, n > 1
 \end{cases}$$
+$$
+F_n = F_{n-1} + F_{n-2} \geq 2\cdot F_{n-2} \geq 2^2\cdot F_{n-2\cdot2} \geq 2^{\frac{n}{2}}
+$$
 
 ### 2. Asymptotic Notation
 ### 3. Preview of next topic(Divide and Conquer)
