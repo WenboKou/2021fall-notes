@@ -79,7 +79,7 @@ Suppose we have a number $$t$$, it takes $$\log t$$ digits to write this number 
 | ---- | ---- | ---- |
 | Recursion | exp(cn) addition[takes number of digits n]|  exp(cn)n|
 | Iteration | nc addition|$$1+2+\cdots+n \approx n^2$$[Since $$F_n$$ has approximately n digits]  |
-| Fast Mat Pow|log n | |
+| Fast Mat Pow|log n multiplication|$$n^2\log n$$[$$\log n$$ multiplication, and big number has almost $$n$$ digits.] Of course $$n^2$$ can be smaller. e.t. Karatsuba|
 |closed form|log n|d|
 ## 2. Asymptotic Notation
 ## 3. Preview of next topic(Divide and Conquer)
