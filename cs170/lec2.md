@@ -56,6 +56,6 @@ $$9^1, 9^2, 9^4, 9^8, 9^{16}, 9^{32}, 9^{64}$$
 $$71 = 64 + 4 + 2 + 1$$.
 Total need $$<= 2 \cdot \log_2{n}$$ flops. Because we need $$\log_2{n}$$ times multiplication and at most need  $$\log_2{n}$$ times addition to get the final result.
 
-
+??
 ## 2. Asymptotic Notation
 ## 3. Preview of next topic(Divide and Conquer)
