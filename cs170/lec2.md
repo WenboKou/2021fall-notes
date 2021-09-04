@@ -65,6 +65,12 @@ $$A = Q \Lambda Q^T, Q^TQ = QQ^T = I, \Lambda = \begin{bmatrix}
 $$
 A^n = Q\Lambda^nQ^T
 $$
+$$\phi = \frac{1+\sqrt{5}}{2}, \psi = \frac{1-\sqrt{5}}{2}, Q = \begin{bmatrix}
+    \sqrt{\phi} & -\sqrt{-\psi}\\
+    \sqrt{-\psi} & \sqrt{\phi}
+\end{bmatrix}, \lambda_1 = \phi, \lambda_2 = \psi\\
+F_n = \frac{1}{\sqrt{5}}(\phi^n - \psi^n)$$.
+
 
 ## 2. Asymptotic Notation
 ## 3. Preview of next topic(Divide and Conquer)
