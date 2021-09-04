@@ -6,4 +6,6 @@
   * [lec2 Divide-and-Conquer \(Part I\)](cs170/lec2-divide-and-conquer-part-i.md)
 * [eecs127](eecs127/README.md)
   * [Vectors](eecs127/linear-algebra-review.md)
+* [stat154](stat154/README.md)
+  * [Untitled](stat154/untitled.md)
 
