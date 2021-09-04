@@ -16,3 +16,5 @@ $$T(n)=\begin{cases}
 
 ### 2. Asymptotic Notation
 ### 3. Preview of next topic(Divide and Conquer)
+
+does it work?
