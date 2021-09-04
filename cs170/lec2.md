@@ -83,4 +83,17 @@ Suppose we have a number $$t$$, it takes $$\log t$$ digits to write this number 
 |closed form|log n|ignore this|
 ## 2. Asymptotic Notation
 * "Big-Oh": $$f=O(g)$$ if $$\exist c > 0, \forall n,f(n) \leq c\cdot g(n)$$.
+* "Little-oh" $$f=o(g)$$ means $$\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)}$$
+* "Big-Omega": $$f=\Omega(g)$$ if $$g = O(f)$$.
+* "Little-Omega": $$f=\omega(g)$$ if $$g = o(f)$$.
+* "Theta": $$f=O(g),f=\Omega(g)$$
+
 ## 3. Preview of next topic(Divide and Conquer)
+Master Theorem: Solves recurrences of form. $$T(n)=aT(\frac{n}{b})+cn^d$$(Karatsuba: $$a=3,b=2,d=1$$).
+
+![proof](images/cs170lec2fig2.jpeg)
+|$$\frac{a}{b^d}$$|runtime|
+|----|----|
+|=1|$$n^d\log n$$|
+|>1|$$n^{\log_ba}$$|
+|<1|$$n^d$$|
