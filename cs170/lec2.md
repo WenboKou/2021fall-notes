@@ -82,7 +82,7 @@ Suppose we have a number $$t$$, it takes $$\log t$$ digits to write this number 
 | Fast Mat Pow|log n multiplication|$$n^2\log n$$[$$\log n$$ multiplication, and big number has almost $$n$$ digits.] Of course $$n^2$$ can be smaller. e.t. Karatsuba.|
 |closed form|log n|ignore this|
 ## 2. Asymptotic Notation
-* "Big-Oh": $$f=O(g)$$ if $$\exist c > 0, \forall n,f(n) \leq c\cdot g(n)$$.
+* "Big-Oh": $$f=O(g)$$ if $$\exists c > 0, \forall n,f(n) \leq c\cdot g(n)$$.
 * "Little-oh" $$f=o(g)$$ means $$\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)}$$
 * "Big-Omega": $$f=\Omega(g)$$ if $$g = O(f)$$.
 * "Little-Omega": $$f=\omega(g)$$ if $$g = o(f)$$.
