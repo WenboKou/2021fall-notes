@@ -7,5 +7,3 @@
 ## 2.Karatsuba Algorithm
 
 ![Karatsuba Algorithm](../.gitbook/assets/cs170fig2.jpg)
-
-does it work?
