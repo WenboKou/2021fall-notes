@@ -1,4 +1,4 @@
-# index
+# lec2
 
 ## 1. More Arithmetic
 
@@ -12,7 +12,7 @@ def FibRec(n):
     else: return FibRec(n-1) + FibRec(n-2)
 ```
 
-Addition is the only flop in this algorithm. Let $$T(n)=$$ \#flops to compute $$F_n$$. $$T(n)=\begin{cases} 0, n\leq 1\\ T(n-1) + T(n-2) + 1, n > 1 \end{cases}$$ $$F_n = F_{n-1} + F_{n-2} \geq 2\cdot F_{n-2} \geq 2^2\cdot F_{n-2\cdot2} \geq 2^{\frac{n}{2}}$$. For the same reason $$F_n \leq 2^n$$. So the number of flops is exponential.
+Addition is the only flop in this algorithm. Let $$T(n)=$$ \#flops to compute $$F_n$$. $$T(n)=\begin{cases} 0, n\leq 1\\ T(n-1) + T(n-2) + 1, n > 1 \end{cases}$$ $$F_n = F_{n-1} + F_{n-2} \geq 2\cdot F_{n-2} \geq 2^2\cdot F_{n-2\cdot2} \geq 2^{\frac{n}{2}}$$. For the same reason $$F_n \leq 2^n$$. The number of flops is exponential, see figure below for procedure to compute it. 
 
 ### 2. Alg 2: Iteration
 
@@ -57,7 +57,18 @@ $$
 A^n = Q\Lambda^nQ^T
 $$
 
-$$\phi = \frac{1+\sqrt{5}}{2}, \psi = \frac{1-\sqrt{5}}{2}, Q = \begin{bmatrix} \sqrt{\phi} & -\sqrt{-\psi}\\ \sqrt{-\psi} & \sqrt{\phi} \end{bmatrix}, \lambda_1 = \phi, \lambda_2 = \psi\\ F_n = \frac{1}{\sqrt{5}}(\phi^n - \psi^n)$$.
+$$\phi = \frac{1+\sqrt{5}}{2}, \psi = \frac{1-\sqrt{5}}{2}, Q = \begin{bmatrix} \sqrt{\phi} & -\sqrt{-\psi}\\ \sqrt{-\psi} & \sqrt{\phi} \end{bmatrix}, \lambda_1 = \phi, \lambda_2 = \psi\\ F_n = \frac{1}{\sqrt{5}}(\phi^n - \psi^n)$$. We can use fast powering to do the exponentiation, so in terms of flops it's likely no better than Alg 3.
+
+### 5. Summary
+
+Suppose we have a number $$t$$, it takes $$\log t$$ digits to write this number down.\[This is because $$\log_{10}t + 1$$ is its number of digits.\] Since $$2^{\frac{n}{2}}\leq F_n \leq 2^n$$, we need $$c\log 2^n = c n$$ digits to write it down.
+
+| Alg | \# flops | Runtime |
+| :--- | :--- | :--- |
+| Recursion | exp\(cn\) addition\[takes number of digits n\] | exp\(cn\)n |
+| Iteration | nc addition | $$1+2+\cdots+n \approx n^2$$\[Since $$F_n$$ has approximately n digits\] |
+| Fast Mat Pow | log n multiplication | $$n^2\log n$$\[$$\log n$$ multiplication, and big number has almost $$n$$ digits.\] Of course $$n^2$$ can be smaller. e.t. Karatsuba. |
+| closed form | log n |  |
 
 ## 2. Asymptotic Notation
 
