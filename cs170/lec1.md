@@ -1,7 +1,10 @@
-### 1.Divide and Conquer
+# lec1
 
-![Divide and Conquer](images/cs170fig1.jpg)
+## 1.Divide and Conquer
 
-### 2.Karatsuba Algorithm
+![Divide and Conquer](../.gitbook/assets/cs170fig1.jpg)
 
-![Karatsuba Algorithm](images/cs170fig2.jpg)
+## 2.Karatsuba Algorithm
+
+![Karatsuba Algorithm](../.gitbook/assets/cs170fig2.jpg)
+

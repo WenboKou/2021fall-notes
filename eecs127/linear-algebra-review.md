@@ -64,42 +64,41 @@ The geometry view of this method is just move the black line along $$x^0$$.
 
 ## 4. Projection on a line
 
-Consider a line$${x_0 + tu:t\in R}$$
-The *projection* of a given point $$x$$ on the line is a vector $$z$$ located on the line, that is closest to $$ x $$ (in Euclidean norm). This corresponds to a simple optimization problem:
+Consider a line$${x_0 + tu:t\in R}$$ The _projection_ of a given point $$x$$ on the line is a vector $$z$$ located on the line, that is closest to $$x$$ \(in Euclidean norm\). This corresponds to a simple optimization problem:
+
 $$
-\min\limits_{t} ||x- x_0 - tu||_2. 
+\min\limits_{t} ||x- x_0 - tu||_2.
 $$
+
 There are three methods to find $$z$$.
 
 ### [First Method From Textbook](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_vecs_proj.html)
 
 ### Take derivative of the optimization problem
 
-$$\frac{\partial \mathcal L}{\partial t} = 2t - 2u^T(x-x_0)=0 $$.
-We get the same result as the first method.
+$$\frac{\partial \mathcal L}{\partial t} = 2t - 2u^T(x-x_0)=0$$. We get the same result as the first method.
 
-### Analytical view 
-![fig3](images/ee127fig3.jpg)
+### Analytical view
 
-
+![fig3](../.gitbook/assets/ee127fig3.jpg)
 
 ## 5. Orthogonalization: the Gram-Schmidt procedure
 
-A basis $$ (u_i)_{i =1}^n $$ is said to be *orthogonal* if $$u_i^Tu_j=0$$ if $$i \neq j$$. If in addition, $$||u_i||_2 = 1$$, we say that the basis is *orthonormal*.
-Orthogonalization means given a set of independent vectors that span the space, compute the orthonormal basis.
-The procedure is Gram-Schmidt and its theory is based on SECTION 4.
+A basis $$(u_i)_{i =1}^n$$ is said to be _orthogonal_ if $$u_i^Tu_j=0$$ if $$i \neq j$$. If in addition, $$||u_i||_2 = 1$$, we say that the basis is _orthonormal_. Orthogonalization means given a set of independent vectors that span the space, compute the orthonormal basis. The procedure is Gram-Schmidt and its theory is based on SECTION 4.
 
-![Gram-Schmidt](images/ee127fig4.jpg)
+![Gram-Schmidt](../.gitbook/assets/ee127fig4.jpg)
 
 ## 6. Hyperplanes
 
 A hyperplane in $$\text{R}^n$$ is a set of the form
+
 $$
 \text{H} = \{x:a^Tx=b\}
-$$ 
-and $$ b\in \text{R} $$ are given.
+$$
 
-![hyperplane](images/ee127fig5.jpg)
+and $$b\in \text{R}$$ are given.
+
+![hyperplane](../.gitbook/assets/ee127fig5.jpg)
 
 A half-space is a subset of the form
 
@@ -107,22 +106,26 @@ $$
 \text{H} = \{x:a^Tx \geq b\}
 $$
 
-where $$ a \in \text{R}^n, a \neq 0, b \in \text{R} $$.
-To make $$a^Tx\geq b$$, $$x$$ must be on or above the plane, so that its module is big enough to satisfy the inequality.
+where $$a \in \text{R}^n, a \neq 0, b \in \text{R}$$. To make $$a^Tx\geq b$$, $$x$$ must be on or above the plane, so that its module is big enough to satisfy the inequality.
 
 ## 7. Linear Functions
 
 A function $$f:\text{R}^n \rightarrow \text{R}$$ is linear if and only if $$f$$ preserves scaling and addition of its arguments:
+
 * for every $$x\in \text{R}^n$$, and $$\alpha \in \text{R}$$, $$f(\alpha x)=\alpha f(x)$$; and 
 * for every $$x_1, x_2 \in \text{R}^n, f(x_1 + x_2) = f(x_1) + f(x_2).$$
-A function $$ f $$ is *affine* if and only if $$f(x)-f(0)$$ is linear.
 
-![fig6](image/../images/ee127fig6.jpg)
+  A function $$f$$ is _affine_ if and only if $$f(x)-f(0)$$ is linear.
+
+![fig6](../.gitbook/assets/ee127fig6.jpg)
 
 ### Theorem: First-order expansion of a function.
 
-The *first-order approximation* of a differentiable function $$f$$ at a point $$x_0$$ is of the form
+The _first-order approximation_ of a differentiable function $$f$$ at a point $$x_0$$ is of the form
+
 $$
 f(x) \approx f(x_0) + \nabla f(x_0)^T(x-x_0)
 $$
+
 where $$\nabla f(x_0)\in \text{R}^n$$ is the gradient of $$f$$ at $$x_0$$.
+
