@@ -70,6 +70,7 @@ $$\phi = \frac{1+\sqrt{5}}{2}, \psi = \frac{1-\sqrt{5}}{2}, Q = \begin{bmatrix}
     \sqrt{-\psi} & \sqrt{\phi}
 \end{bmatrix}, \lambda_1 = \phi, \lambda_2 = \psi\\
 F_n = \frac{1}{\sqrt{5}}(\phi^n - \psi^n)$$.
+We can use fast powering to do the exponentiation, so in terms of flops it's likely no better than Alg 3.
 
 
 ## 2. Asymptotic Notation
