@@ -1,8 +1,4 @@
----
-description: Divide-and-Conquer (Part I)
----
-
-# lec2 divide-and-conquer-part-i
+# index
 
 ## 1. More Arithmetic
 
@@ -50,6 +46,10 @@ $$
 $$
 
 So $$\begin{bmatrix}F_{n+1}\\ F_n\end{bmatrix} = A^n\begin{bmatrix}1 \\0 \end{bmatrix}$$
+
+For example we want to compute $$9^{71}$$. $$9^1, 9^2, 9^4, 9^8, 9^{16}, 9^{32}, 9^{64}$$ $$71 = 64 + 4 + 2 + 1$$. Total need $$<= 2 \cdot \log_2{n}$$ flops. Because we need $$\log_2{n}$$ times multiplication and at most need $$\log_2{n}$$ times addition to get the final result.
+
+??
 
 ## 2. Asymptotic Notation
 
