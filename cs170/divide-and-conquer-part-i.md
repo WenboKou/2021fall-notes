@@ -1,4 +1,4 @@
-# lec2
+# index
 
 ## 1. More Arithmetic
 
@@ -68,9 +68,23 @@ Suppose we have a number $$t$$, it takes $$\log t$$ digits to write this number 
 | Recursion | exp\(cn\) addition\[takes number of digits n\] | exp\(cn\)n |
 | Iteration | nc addition | $$1+2+\cdots+n \approx n^2$$\[Since $$F_n$$ has approximately n digits\] |
 | Fast Mat Pow | log n multiplication | $$n^2\log n$$\[$$\log n$$ multiplication, and big number has almost $$n$$ digits.\] Of course $$n^2$$ can be smaller. e.t. Karatsuba. |
-| closed form | log n |  |
+| closed form | log n | ignore this |
 
 ## 2. Asymptotic Notation
 
+* "Big-Oh": $$f=O(g)$$ if $$\exists  c > 0, \forall n,f(n) \leq c\cdot g(n)$$.
+* "Little-oh" $$f=o(g)$$ means $$\lim_{n\rightarrow \infty}\frac{f(n)}{g(n)}$$
+* "Big-Omega": $$f=\Omega(g)$$ if $$g = O(f)$$.
+* "Little-Omega": $$f=\omega(g)$$ if $$g = o(f)$$.
+* "Theta": $$f=O(g),f=\Omega(g)$$
+
 ## 3. Preview of next topic\(Divide and Conquer\)
+
+Master Theorem: Solves recurrences of form. $$T(n)=aT(\frac{n}{b})+cn^d$$\(Karatsuba: $$a=3,b=2,d=1$$\).
+
+| $$\frac{a}{b^d}$$ | runtime |
+| :--- | :--- |
+| =1 | $$n^d\log n$$ |
+| &gt;1 | $$n^{\log_ba}$$ |
+| &lt;1 | $$n^d$$ |
 
