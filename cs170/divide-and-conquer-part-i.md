@@ -2,7 +2,7 @@
 description: Divide-and-Conquer (Part I)
 ---
 
-# lec2
+# lec2 divide-and-conquer-part-i
 
 ## 1. More Arithmetic
 
