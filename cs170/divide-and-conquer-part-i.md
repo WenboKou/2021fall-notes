@@ -1,4 +1,4 @@
-# index
+# lec2
 
 ## 1. More Arithmetic
 
