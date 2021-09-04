@@ -72,6 +72,11 @@ $$\phi = \frac{1+\sqrt{5}}{2}, \psi = \frac{1-\sqrt{5}}{2}, Q = \begin{bmatrix}
 F_n = \frac{1}{\sqrt{5}}(\phi^n - \psi^n)$$.
 We can use fast powering to do the exponentiation, so in terms of flops it's likely no better than Alg 3.
 
-
+| Alg | # flops | Runtime |
+| ---- | ---- | ---- |
+| Recursion | exp(cn) addition|  |
+| Iteration | n|  |
+| Fast Mat Pow|log n | |
+|closed form|log n|d|
 ## 2. Asymptotic Notation
 ## 3. Preview of next topic(Divide and Conquer)
