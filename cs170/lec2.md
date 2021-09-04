@@ -19,7 +19,8 @@ $$T(n)=\begin{cases}
 \end{cases}$$
 $$
 F_n = F_{n-1} + F_{n-2} \geq 2\cdot F_{n-2} \geq 2^2\cdot F_{n-2\cdot2} \geq 2^{\frac{n}{2}}
-$$
+$$. For the same reason $$F_n \leq 2^n$$. So the number of flops is exponential
 
-### 2. Asymptotic Notation
-### 3. Preview of next topic(Divide and Conquer)
+
+## 2. Asymptotic Notation
+## 3. Preview of next topic(Divide and Conquer)
