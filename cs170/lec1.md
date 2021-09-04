@@ -5,3 +5,5 @@
 ### 2.Karatsuba Algorithm
 
 ![Karatsuba Algorithm](images/cs170fig2.jpg)
+
+where is lec2?
