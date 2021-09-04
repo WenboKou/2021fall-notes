@@ -1,4 +1,4 @@
-# lec2
+# index
 
 ## 1. More Arithmetic
 
@@ -47,9 +47,17 @@ $$
 
 So $$\begin{bmatrix}F_{n+1}\\ F_n\end{bmatrix} = A^n\begin{bmatrix}1 \\0 \end{bmatrix}$$
 
-For example we want to compute $$9^{71}$$. $$9^1, 9^2, 9^4, 9^8, 9^{16}, 9^{32}, 9^{64}$$ $$71 = 64 + 4 + 2 + 1$$. Total need $$<= 2 \cdot \log_2{n}$$ flops. Because we need $$\log_2{n}$$ times multiplication and at most need $$\log_2{n}$$ times addition to get the final result.
+For example we want to compute $$9^{71}$$. Computer the following sequence first, $$9^1, 9^2, 9^4, 9^8, 9^{16}, 9^{32}, 9^{64}$$ $$71 = 64 + 4 + 2 + 1$$. Total need $$<= 2 \cdot \log_2{n}$$ flops. Because we need $$\log_2{n}$$ times multiplication and at most need $$\log_2{n}$$ times addition to get the final result. So $$O(\log n)$$ flops for matrix powering.
 
-??
+### 4. Alg 4: closed form solution\(will never quiz me on\)
+
+$$A = Q \Lambda Q^T, Q^TQ = QQ^T = I, \Lambda = \begin{bmatrix} \lambda_1 & 0 \\ 0 & \lambda_2 \end{bmatrix}$$
+
+$$
+A^n = Q\Lambda^nQ^T
+$$
+
+$$\phi = \frac{1+\sqrt{5}}{2}, \psi = \frac{1-\sqrt{5}}{2}, Q = \begin{bmatrix} \sqrt{\phi} & -\sqrt{-\psi}\\ \sqrt{-\psi} & \sqrt{\phi} \end{bmatrix}, \lambda_1 = \phi, \lambda_2 = \psi\\ F_n = \frac{1}{\sqrt{5}}(\phi^n - \psi^n)$$.
 
 ## 2. Asymptotic Notation
 
