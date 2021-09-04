@@ -18,7 +18,7 @@ $$T(n)=\begin{cases}
     T(n-1) + T(n-2) + 1, n > 1
 \end{cases}$$
 $$F_n = F_{n-1} + F_{n-2} \geq 2\cdot F_{n-2} \geq 2^2\cdot F_{n-2\cdot2} \geq 2^{\frac{n}{2}}$$. For the same reason $$F_n \leq 2^n$$. The number of flops is exponential, see figure below for procedure to compute it.
-![Number of flops](images/cs170lec2fig1.jpg)
+![Number of flops](images/cs170lec2fig1.jpeg)
 
 ### 2. Alg 2: Iteration
 
@@ -91,7 +91,7 @@ Suppose we have a number $$t$$, it takes $$\log t$$ digits to write this number 
 ## 3. Preview of next topic(Divide and Conquer)
 Master Theorem: Solves recurrences of form. $$T(n)=aT(\frac{n}{b})+cn^d$$(Karatsuba: $$a=3,b=2,d=1$$).
 
-![proof](images/cs170lec2fig2.jpg)
+![proof](images/cs170lec2fig2.jpeg)
 |$$\frac{a}{b^d}$$|runtime|
 |----|----|
 |=1|$$n^d\log n$$|
