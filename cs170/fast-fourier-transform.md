@@ -18,7 +18,7 @@ So we can compute $$\gamma = \alpha \beta = (AB)(10)$$
 
 ### Alg1: "straight forward"
 
-$$c_k = \sum_{j=0}^k a_jb{k-j}$$
+$$c_k = \sum_{j=0}^k a_jb_{k-j}$$
 ```text
 loop over i = 0 to N - 1
     compute c: loop j = 0 to i
