@@ -27,7 +27,7 @@ total runtime is $$\mathcal O(N^2)$$
 
 ### Alg2: Karatsuba
 
-see figure1
+![fig1](images/cs170lec4fig1.jpeg)
 
 ### Polynomial Interpolation
 
@@ -36,19 +36,19 @@ A degree $$< N$$ polynomial is fully determined by its evaluation on $$N$$ disti
 * Compute evaluation of $$A,B$$ on N distinct points each, multiply them, then interpolate to get back the coefficients from the evaluations of C. 
   
 ### Why does interpolation work?
-see fig2 
+![fig2](images/cs170lec4fig2.jpeg)
 
 ## 2.Fast Fourier Transform
 
 ### The Discrete Fourier Transform(DFT) is a matrix
 
 complex number recap: $$z = a + \sqrt{-1}b=re^{\sqrt{-1}\theta}$$
-fig3
+![fig3](images/cs170lec4fig3.jpeg)
 
 A DFT matrix $$F$$
 $$F_{ij}=(\omega)^{ij}=(e^{\frac{2\pi \sqrt{-1}}{N}})^{ij}$$
 
-fig4
+![fig4](images/cs170lec4fig4.jpeg)
 
 ### The Fast Fourier Transform(FFT) is an algorithm
 
@@ -70,8 +70,8 @@ Total:$$\mathcal{O}(N\log N)$$ assuming we can mult/add complex numbers in const
 
 ### Claims:
 
-1.fig5
+1.![fig5](images/cs170lec4fig5.jpeg)
 2.$$\bar{M}x = \bar{M\bar{x}}\Rightarrow F^{-1}\hat{c} = \frac{1}{N}\bar{F\bar{\hat{c}}}$$
 
 ## 3.Cross-correlation
-fig6
+![fig6](images/cs170lec4fig6.jpeg)
