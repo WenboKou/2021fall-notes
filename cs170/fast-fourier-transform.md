@@ -75,3 +75,6 @@ Total:$$\mathcal{O}(N\log N)$$ assuming we can mult/add complex numbers in const
 
 ## 3.Cross-correlation
 ![fig6](images/cs170lec4fig6.jpeg)
+
+## References
+[The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?](https://www.youtube.com/watch?v=h7apO7q16V0)
