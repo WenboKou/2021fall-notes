@@ -65,6 +65,7 @@ $$w = A \varphi + \zeta, \zeta \in \mathcal{N}(A^T)$$.
 For any $$x \in \mathcal{R}(A^T)$$, and any $$z\in \mathcal{N}(A)$$, it holds that $$x^T z = 0$$. Because every $$x \in \mathcal{R}(A^T)$$, it can be written as $$x = A^T y$$ for some $$y \in \mathbb{R}^m$$. Hence,
 $$x^T z = (A^Ty)^T z = y^T Az = 0, \forall z \in \mathcal{N}(A)$$.
 Thus $$\mathcal{R}(A^T)$$ and $$\mathcal{N}(A)$$ are mutually orthogonal subspace. With a similar reasoning, we also argue that $$\mathcal{R}(A) \bot \mathcal{N}(A^T)$$
+
 ![fig1](images/127matricesfig1.jpeg)
 
 ## Determinants
