@@ -80,7 +80,7 @@ $$\operatorname{det}A = \operatorname{det}A^T$$
 $$\operatorname{det}AB = 
 \operatorname{det}BA = \operatorname{det}A \operatorname{det}B$$
 $$\operatorname{det}\alpha A = \alpha^n \operatorname{det}A$$.
-Here is a intuitive way to understand determinant:
+Here is an intuitive way to understand determinant:
 [3b1b](https://www.youtube.com/watch?v=Ip3X9LOh2dk&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=6)
 
 ## Eigenvalues/eigenvectors
