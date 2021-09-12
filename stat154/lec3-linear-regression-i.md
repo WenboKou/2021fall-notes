@@ -50,3 +50,29 @@ $$
 
 $$(\hat{\beta_0},\hat{\beta_1})=\text{argmin}_{\beta_0,\beta_1} L(\beta_0,\beta_1) \Rightarrow (\hat{\beta_0},\hat{\beta_1})=\text{argmin}_{\beta_0,\beta_1} \text{RSS}(\beta_0,\beta_1)$$.
 
+$$\partial_{\beta_0}\text{RSS}(\beta_0, \beta_1) = -2\sum_{i=1}^n(y_i - \beta_0 \beta_1 x_i)=0$$
+$$\partial_{\beta_1}\text{RSS}(\beta_0, \beta_1) = -2\sum_{i=1}^n(y_i - \beta_0 \beta_1 x_i)x_i=0$$
+
+![fig1](images/stat154lec3fig1.png)
+
+## Model assessment(Is this a good prediction?)
+
+Suppose $$\hat{\beta_0} = 1, \hat{\beta_1} = 0.5\Rightarrow y = 1 + 0.5x$$
+
+![fig2](images/stat154lec3fig2.png)
+
+Questions:
+1. How confident for saying $$\beta_1 = 0.5$$ ?
+Confident interval for $$\beta_1$$ .
+2. Do we need $$x$$ to predict $$y$$?
+Testing whether $$\beta_1 = 0$$ : t-test
+3. Does $$x$$ well-explain $$y$$ ?
+Testing whether model is good enough: $$R^2$$  statistics.
+
+### Confidence interval
+
+Intuition: Gaussian mean estimation.
+
+$$z_1 \dots, z_n \sim_{\text{iid}} \mathcal{N}(\mu, \sigma^2) \Rightarrow \hat{\mu} = \bar{z} = \frac{\sum_{i=1}^n}{z_i},\operatorname{Var}(\hat{\mu}) = \frac{\sigma^2}{n}, \operatorname{SE}(\hat{\mu})=\frac{\sigma}{\sqrt{n}}$$ .
+
+$$95\%$$ confidence interval:
