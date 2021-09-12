@@ -67,3 +67,10 @@ $$95\%$$ confidence interval:
 
 ![fig3](../.gitbook/assets/stat154lec3fig3.jpeg)
 
+If confidence interval is large, it's not good.
+
+![fig4](images/stat154lec3fig4.jpeg)
+
+In practice, $$\sigma^2$$ is unknown. Use $$\text{RSE} = \sqrt{\sum_{i=1}^n\frac{(y_i - \hat{\beta_0} - \hat{{\beta_1}} x_1)^2}{n-2}}$$ to estimate $$\sigma^2$$
+
+![fig5](images/stat154lec3fig5.png)
