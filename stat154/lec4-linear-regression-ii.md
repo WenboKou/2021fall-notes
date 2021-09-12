@@ -27,3 +27,18 @@ $$t_{\alpha}$$ is such that $$P(\beta_j \in I_j)=1-\alpha$$
 
 ## Hypothesis testing
 
+For a subset $$S  \subseteq \{0,1,2,\dots, d\}$$ Is any of the coefficients $$\{\beta_j : j \in S\}$$ non-zero?
+
+Null hypothesis: $$\forall j \in S, \beta_j = 0$$
+
+$$\text{RSS}_1  = \min_{\beta} \sum_{i=1}^n(y_i - x_i^T\beta)^2 $$
+The residual sum of square when we fit all $$\beta_j$$
+
+
+$$\text{RSS}_0 = \min_{{\beta}_{S^c}}\sum_{i=1}^n(y_i - x_{i,S^c}^T \beta_{S^c})^2,S^c = \{0,1,\dots,d\}\backslash S$$
+
+The residual sum of square when we fit only $$\{\beta_j:j\in S^c \}$$
+
+F statistics: $$F = \frac{\frac{\text{RSS}_0-\text{RSS}_1}{d-d_0}}{\frac{\text{RSS}_1}{n-d-1}},d_0 = \text{size of}[d] \backslash S$$
+
+$$F \sim F_{d-d_0,n-d-1}$$
