@@ -55,7 +55,10 @@ Suppose $$\hat{\beta_0} = 1, \hat{\beta_1} = 0.5\Rightarrow y = 1 + 0.5x$$
 
 ![fig2](../.gitbook/assets/stat154lec3fig2.png)
 
-Questions: 1. How confident for saying $$\beta_1 = 0.5$$ ? Confident interval for $$\beta_1$$ . 2. Do we need $$x$$ to predict $$y$$? Testing whether $$\beta_1 = 0$$ : t-test 3. Does $$x$$ well-explain $$y$$ ? Testing whether model is good enough: $$R^2$$ statistics.
+Questions: 
+1. How confident for saying $$\beta_1 = 0.5$$ ? Confident interval for $$\beta_1$$ . 
+2. Do we need $$x$$ to predict $$y$$? Testing whether $$\beta_1 = 0$$ : t-test 
+3. Does $$x$$ well-explain $$y$$ ? Testing whether model is good enough: $$R^2$$ statistics.
 
 ### Confidence interval
 
