@@ -5,7 +5,7 @@ description: 'orthogonalization, QR decomposition, kernels'
 # lec4:ortho QR kernels
 
 ## Ortho
-already mentioned in [linear-algebra-review](linear-algebra-review.md)
+already mentioned in [linear-algebra-review](linear-algebra-review.md#5-orthogonalization-the-gram-schmidt-procedure)
 
 ## QR decomposition
 The QR decomposition is nothing else than the Gram-Schmidt procedure applied to the columns of the matrix, and with result expressed in matrix form.
