@@ -11,6 +11,7 @@
   * [Vectors](eecs127/linear-algebra-review.md)
   * [Matrices](eecs127/matrices.md)
   * [lec4:ortho QR kernels](eecs127/lec4-ortho-qr-kernels.md)
+  * [lec5:spectral theorem PSD Matrices PCA](eecs127/lec5-spectral-theorem-psd-matrices-pca.md)
 * [stat154](stat154/README.md)
   * [lec3 Linear Regression I](stat154/lec3-linear-regression-i.md)
 
