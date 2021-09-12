@@ -76,3 +76,5 @@ Intuition: Gaussian mean estimation.
 $$z_1 \dots, z_n \sim_{\text{iid}} \mathcal{N}(\mu, \sigma^2) \Rightarrow \hat{\mu} = \bar{z} = \frac{\sum_{i=1}^n}{z_i},\operatorname{Var}(\hat{\mu}) = \frac{\sigma^2}{n}, \operatorname{SE}(\hat{\mu})=\frac{\sigma}{\sqrt{n}}$$ .
 
 $$95\%$$ confidence interval:
+
+![fig3](images/stat154lec3fig3.jpeg)
