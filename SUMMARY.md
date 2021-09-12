@@ -14,4 +14,5 @@
   * [lec5:spectral theorem PSD Matrices PCA](eecs127/lec5-spectral-theorem-psd-matrices-pca.md)
 * [stat154](stat154/README.md)
   * [lec3 Linear Regression I](stat154/lec3-linear-regression-i.md)
+  * [lec4 Linear Regression II](stat154/lec4-linear-regression-ii.md)
 

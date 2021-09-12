@@ -55,10 +55,7 @@ Suppose $$\hat{\beta_0} = 1, \hat{\beta_1} = 0.5\Rightarrow y = 1 + 0.5x$$
 
 ![fig2](../.gitbook/assets/stat154lec3fig2.png)
 
-Questions: 
-1. How confident for saying $$\beta_1 = 0.5$$ ? Confident interval for $$\beta_1$$ . 
-2. Do we need $$x$$ to predict $$y$$? Testing whether $$\beta_1 = 0$$ : t-test 
-3. Does $$x$$ well-explain $$y$$ ? Testing whether model is good enough: $$R^2$$ statistics.
+Questions: 1. How confident for saying $$\beta_1 = 0.5$$ ? Confident interval for $$\beta_1$$ . 2. Do we need $$x$$ to predict $$y$$? Testing whether $$\beta_1 = 0$$ : t-test 3. Does $$x$$ well-explain $$y$$ ? Testing whether model is good enough: $$R^2$$ statistics.
 
 ### Confidence interval
 
@@ -72,29 +69,23 @@ $$95\%$$ confidence interval:
 
 If confidence interval is large, it's not good.
 
-![fig4](images/stat154lec3fig4.jpeg)
+![fig4](../.gitbook/assets/stat154lec3fig4.jpeg)
 
 In practice, $$\sigma^2$$ is unknown. Use $$\text{RSE} = \sqrt{\sum_{i=1}^n\frac{(y_i - \hat{\beta_0} - \hat{{\beta_1}} x_1)^2}{n-2}}$$ to estimate $$\sigma^2$$
 
-![fig5](images/stat154lec3fig5.png)
-
+![fig5](../.gitbook/assets/stat154lec3fig5.png)
 
 ### Hypothesis testing
 
-Intuition: Want to test hypothesis
-$$H_0 : \beta_1 = 0, H_1 : \beta_1 \not = 0$$
-Intuitively, if $$|\frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}|$$ is small, $$H_0$$ is more likely to be true.
-My explanation is when $$\hat{\beta_1}$$ is small $$\operatorname{SE}(\hat{\beta_1})$$ is large, which means the mean is around $$0$$, since the variance si big it's more likely for $$\hat{\beta_1}$$
-to be zero.
+Intuition: Want to test hypothesis $$H_0 : \beta_1 = 0, H_1 : \beta_1 \not = 0$$ Intuitively, if $$|\frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}|$$ is small, $$H_0$$ is more likely to be true. My explanation is when $$\hat{\beta_1}$$ is small $$\operatorname{SE}(\hat{\beta_1})$$ is large, which means the mean is around $$0$$, since the variance si big it's more likely for $$\hat{\beta_1}$$ to be zero.
 
-![fig6](images/stat154lec3fig6.jpeg)
+![fig6](../.gitbook/assets/stat154lec3fig6.jpeg)
 
 So reject $$H_0$$ when $$|\frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}|$$ is large.
 
 #### Type 1 error
 
-Reject $$H_0$$, when it's true.
-$$P_{H_0}(|t|\geq \text{threshold}) \leq 0.05$$
+Reject $$H_0$$, when it's true. $$P_{H_0}(|t|\geq \text{threshold}) \leq 0.05$$
 
 #### z-test and t-test
 
@@ -108,17 +99,15 @@ $$P_T(|T|\geq t_{\alpha})=\alpha$$
 
 For simplicity, I will use $${\operatorname{SE}(\hat{\beta_1})}$$ instead of $${\hat{\operatorname{SE}(\hat{\beta_1})}}$$
 
-When $$n$$ is large($$\geq 25$$) $$z \approx t, z_{\alpha} \approx t_{\alpha}$$
+When $$n$$ is large\($$\geq 25$$\) $$z \approx t, z_{\alpha} \approx t_{\alpha}$$
 
 #### How to determine the threshold?
 
 t-statistics: $$t = \frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}$$ It follows t-distribution when $$H_0$$ is true.
 
-##### t-distribution with degree of freedom $$n-1$$
+**t-distribution with degree of freedom** 
 
-The distribution of $$T = \frac{z_1}{\sqrt{(z_2^2+\dots+ z_n^2)/(n-1)}}$$
-When $$z_i \sim_{iid}\mathcal{N}(0,1)$$
-When $$n \geq 25$$ this is very close to $$\mathcal{N}(0,1)$$
+The distribution of $$T = \frac{z_1}{\sqrt{(z_2^2+\dots+ z_n^2)/(n-1)}}$$ When $$z_i \sim_{iid}\mathcal{N}(0,1)$$ When $$n \geq 25$$ this is very close to $$\mathcal{N}(0,1)$$
 
 Why this is t-distribution? Will explain this when we talk about multiple linear regression.
 
@@ -128,26 +117,25 @@ $$P_{H_0}(|t| \geq t_*)=P(|T|\geq t_*)=0.05$$
 
 When $$n \geq 25, T \approx \mathcal{N}(0,1) \Rightarrow t_* \approx 2$$
 
-![fig7](images/stat154lec3fig7.png)
+![fig7](../.gitbook/assets/stat154lec3fig7.png)
 
 p-value is very intuitive, I believe you can understand it.
 
 Actually p-value can be used not only on t-value, but also other value.
 
-![fig8](images/stat154lec3fig8.png)
+![fig8](../.gitbook/assets/stat154lec3fig8.png)
 
 ### Does $$x$$ well-explain $$y$$ ?
 
-$$R^2$$ Statistics: $$\text{RSS}=\sum_{i=1}^n (y_i - \hat{y_i})^2 = \sum_{i=1}^n(y_i - \hat{\beta_0} - \hat{\beta_1}x_i)^2$$
-$$\text{TSS} = \sum_{i=1}^n(y_i - \bar{y})^2$$
-$$R^2 = \frac{\text{TSS}-\text{RSS}}{\text{TSS}}=1-\frac{\text{RSS}}{\text{TSS}} \in [0,1]$$
+$$R^2$$ Statistics: $$\text{RSS}=\sum_{i=1}^n (y_i - \hat{y_i})^2 = \sum_{i=1}^n(y_i - \hat{\beta_0} - \hat{\beta_1}x_i)^2$$ $$\text{TSS} = \sum_{i=1}^n(y_i - \bar{y})^2$$ $$R^2 = \frac{\text{TSS}-\text{RSS}}{\text{TSS}}=1-\frac{\text{RSS}}{\text{TSS}} \in [0,1]$$
 
 Large $$R^2$$ : $$x$$ well explain $$y$$
 
 Small $$R^2$$: $$x$$ not well explain $$y$$
 
-![fig9](images/stat154lec3fig9.png)
+![fig9](../.gitbook/assets/stat154lec3fig9.png)
 
 Another interpretation of $$R^2$$ statistics.
 
 $$r = \hat{\operatorname{Cov}}(X,Y) = \frac{\sum_{i=1}^n(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n(x_i - \bar{x})^2}\sqrt{\sum_{i=1}^n(y_i - \bar{y})^2}} \ \Rightarrow R^2 = r^2$$
+
