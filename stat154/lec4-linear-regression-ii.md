@@ -42,3 +42,8 @@ The residual sum of square when we fit only $$\{\beta_j:j\in S^c \}$$
 F statistics: $$F = \frac{\frac{\text{RSS}_0-\text{RSS}_1}{d-d_0}}{\frac{\text{RSS}_1}{n-d-1}},d_0 = \text{size of}[d] \backslash S$$
 
 $$F \sim F_{d-d_0,n-d-1}$$
+
+### F distribution
+
+$$F_{p,q}$$ distribution is the distribution of $$\frac{(Z_1^2 + \dots + Z_p^2)\backslash p}{(U_1^2 +  \dots + U_q^2)\backslash q}$$
+Where $$Z_1,\dots,Z_p,U_1,\dots,U_q \sim_{iid}\mathcal{N}(0,1)$$
