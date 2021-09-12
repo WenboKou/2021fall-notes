@@ -96,6 +96,20 @@ So reject $$H_0$$ when $$|\frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}
 Reject $$H_0$$, when it's true.
 $$P_{H_0}(|t|\geq \text{threshold}) \leq 0.05$$
 
+#### z-test and t-test
+
+When $$\sigma^2$$ is known: Reject $$H_0$$ if $$|z|=|\frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}|\geq z_{\alpha}$$
+
+$$P_{G \sim \mathcal{N}(0,1)}(|G|\geq z_{\alpha}) = \alpha$$
+
+But usually $$\sigma^2$$ is unknown: Reject $$H_0$$ if $$|t| = |\frac{\hat{\beta_1}}{\hat{\operatorname{SE}(\hat{\beta_1})}}| \geq t_{\alpha}$$
+
+$$P_T(|T|\geq t_{\alpha})=\alpha$$
+
+For simplicity, I will use $${\operatorname{SE}(\hat{\beta_1})}$$ instead of $${\hat{\operatorname{SE}(\hat{\beta_1})}}$$
+
+When $$n$$ is large($$\geq 25$$) $$z \approx t, z_{\alpha} \approx t_{\alpha}$$
+
 #### How to determine the threshold?
 
 t-statistics: $$t = \frac{\hat{\beta_1}}{\operatorname{SE}(\hat{\beta_1})}$$ It follows t-distribution when $$H_0$$ is true.
@@ -118,3 +132,22 @@ When $$n \geq 25, T \approx \mathcal{N}(0,1) \Rightarrow t_* \approx 2$$
 
 p-value is very intuitive, I believe you can understand it.
 
+Actually p-value can be used not only on t-value, but also other value.
+
+![fig8](images/stat154lec3fig8.png)
+
+### Does $$x$$ well-explain $$y$$ ?
+
+$$R^2$$ Statistics: $$\text{RSS}=\sum_{i=1}^n (y_i - \hat{y_i})^2 = \sum_{i=1}^n(y_i - \hat{\beta_0} - \hat{\beta_1}x_i)^2$$
+$$\text{TSS} = \sum_{i=1}^n(y_i - \bar{y})^2$$
+$$R^2 = \frac{\text{TSS}-\text{RSS}}{\text{TSS}}=1-\frac{\text{RSS}}{\text{TSS}} \in [0,1]$$
+
+Large $$R^2$$ : $$x$$ well explain $$y$$
+
+Small $$R^2$$: $$x$$ not well explain $$y$$
+
+![fig9](images/stat154lec3fig9.png)
+
+Another interpretation of $$R^2$$ statistics.
+
+$$r = \hat{\operatorname{Cov}}(X,Y) = \frac{\sum_{i=1}^n(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n(x_i - \bar{x})^2}\sqrt{\sum_{i=1}^n(y_i - \bar{y})^2}} \ \Rightarrow R^2 = r^2$$
