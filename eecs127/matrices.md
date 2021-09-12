@@ -103,3 +103,50 @@ $$\tilde{\Sigma} = \begin{bmatrix}
 r is the rank of A, and the scalars $$\sigma_i > 0, i = 1, \dots, r$$ are called the singular values of A.
 
 I should post proof here.(from the text book)
+
+以后会详细讲的，到时候再整理吧。
+
+## Matrix norms
+
+A function $$f : \mathbb{R}^{m,n} \rightarrow \mathbb{R}$$ is a matrix norm if, analogously to the vector case, it satisfies three standard axioms.
+
+$$f(A)>0, f(A)=0 \Leftrightarrow A = 0$$
+$$f(\alpha A) = |\alpha|f(A)$$
+$$f(A + B) \leq f(A) + f(B)$$
+
+Many of the popular also satisfy:
+
+$$f(AB) \leq f(A)f(B)$$
+
+### Frobenius norm
+ $$||A||_F = \sqrt{\operatorname{trace}AA^T} = \sqrt{\sum_{i=1}^m\sum_{j=1}^n|a_{ij}|^2}=\sqrt{\sum_{j=1}^n ||\alpha_j ||_2^2}$$
+
+The Frobenius norm also has an interpretation in terms of the eigenvalues of the symmetric matrix $$AA^T$$:
+$$||A||_F = \sqrt{\operatorname{trace}AA^T} = \sqrt{\sum_{i=1}^m \lambda_i(AA^T)}$$
+
+**I don't know why**
+
+$$||Ax||_2 \leq ||A||_F ||x||_2$$
+$$||AB||_F \leq ||A||_F ||B||_F$$
+
+### Operator norms
+
+$$p = 1,2,\infty$$
+$$
+||A||_p = \max_{u \not ={0}}\frac{||Au||_p}{||u||_P} = \max_{||u||=1}||Au||_p
+$$
+
+By definition, for every $$u$$, $$||Au||_p \leq ||A||_p ||u||_p$$
+
+proof: $$||AB||_p \leq ||A||_p ||B||_p$$
+
+$$||ABu||_p \leq ||A||_p||Bu||_p \leq ||A||_p||B||_p||u||_p$$
+
+We have the following results:
+
+$$||A||_1 = \max_{||u||_1 = 1}||Au||_1 = \max_{j=1,\dots,n}\sum_{i=1}^m |a_{ij}|$$
+$$||A||_{\infty} = \max_{||u||_{\infty}=1}||Au||_{\infty}=\max_{i=1,\dots,m}\sum_{j=1}^n|a_{ij}|$$
+$$||A||_2 = \max_{||u||_2 = 1}||Au||_2 = \sqrt{\lambda_{\max}(A^T A)}$$
+
+**I don't know how to prove these**
+
