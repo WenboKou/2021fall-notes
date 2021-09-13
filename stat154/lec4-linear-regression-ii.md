@@ -43,7 +43,17 @@ F statistics: $$F = \frac{\frac{\text{RSS}_0-\text{RSS}_1}{d-d_0}}{\frac{\text{R
 
 $$F \sim F_{d-d_0,n-d-1}$$
 
-### F distribution
+### F distribution(background knowledge)
 
-$$F_{p,q}$$ distribution is the distribution of $$\frac{(Z_1^2 + \dots + Z_p^2)\backslash p}{(U_1^2 +  \dots + U_q^2)\backslash q}$$
+$$F_{p,q}$$ distribution is the distribution of $$\frac{(Z_1^2 + \dots + Z_p^2)/ p}{(U_1^2 +  \dots + U_q^2)/ q}$$
 Where $$Z_1,\dots,Z_p,U_1,\dots,U_q \sim_{iid}\mathcal{N}(0,1)$$
+
+$$\Chi^2(p)$$ distribution is the dist of $$\sum_{i=1}^p Z_i^2$$ where $$Z_1,\dots,Z_p \sim_{iid}\mathcal{N}(0,1)\Rightarrow F_{p,q}$$ is the ration of $$(\frac{\frac{\Chi^2(p)}{p}}{\frac{\Chi^2(q)}{q}})$$
+
+$$t(q)$$ distribution is the distribution of $$\frac{Z_1}{\sqrt{(U_1^2 + \dots + U_q^2)/ q}}$$ where $$Z_1,U_1,\dots,U_q \sim_{iid} \mathcal{N}(0,1)$$
+
+$$t(q) \sim \mathcal{N}(0,1)/\sqrt{\Chi^2(q)/q}$$
+
+$$F_{1,q}$$ has the same dist as $$(t(q))^2$$
+
+![fig2](images/stat154lec4fig2.png)
