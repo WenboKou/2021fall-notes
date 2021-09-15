@@ -71,7 +71,7 @@ the set of intervals \[preorder\(u\), postorder\(n\)\] are pairwise nested or di
 * tree edge: traversed during the DFS
 * forward edge: goes from an ancestor to a descendant in DFS, and is not a tree edge
 * back edge:
-* goes from a descendent to an ancestor in DFS tree
+  goes from a descendent to an ancestor in DFS tree
 * cross edge: all other edges of the Graph
 * Claim: post\(u\) &lt;= post\(v\) iff \(u,v\) is a back edge 
 * Claim: G is cycle iff exists a back edge
