@@ -7,6 +7,8 @@
   * [lec3 Divide-and-Conquer \(Part II\)](cs170/lec3.md)
   * [lec4 Fast Fourier Transform](cs170/fast-fourier-transform.md)
   * [lec5 Decompositions of graphs](cs170/decompositions-of-graphs.md)
+  * [lec6 Paths in graphs \(Part I\)](cs170/lec6-paths-in-graphs-part-i.md)
+  * [lec7 Paths in graphs \(Part II\)](cs170/lec7-paths-in-graphs-part-ii.md)
 * [eecs127](eecs127/README.md)
   * [Vectors](eecs127/linear-algebra-review.md)
   * [Matrices](eecs127/matrices.md)
